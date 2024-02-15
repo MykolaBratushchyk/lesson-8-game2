@@ -1,0 +1,164 @@
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/lato/Lato-Regular.woff2) format(woff2), url(../fonts/lato/Lato-Regular.woff) format(woff);
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/lato/Lato-Bold.woff2) format(woff2), url(../fonts/lato/Lato-Bold.woff) format(woff);
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/lato/Lato-Black.woff2) format(woff2), url(../fonts/lato/Lato-Black.woff) format(woff);
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+[class*="__section"]{
+	max-width: 970px;
+	margin: 0 auto;
+	padding: 20px 20px;
+}
+
+.page {
+	font-family: "Lato";
+	line-height: 160%;
+	color: #424551;
+}
+
+.homework__section {
+
+	background-color: #cccccc;
+}
+.homework__section-title {
+	background-color: #4fa3f1;
+	font-weight: 900;
+	font-size: 46px;
+	text-align: center;
+	border: 3px solid #424551;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+.homework__game {
+}
+.game {
+	background-color: #b8d4fe;
+	border: 2px solid #424551;
+	border-radius: 10px;
+}
+.game__start {
+	background-color: #ff1616;
+	width: 100px;
+	height: 50px;
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 15px;
+	margin-left: 20px;
+	margin-top: 20px;
+	
+}
+
+.game__start:hover + .game__block:nth-child(2){
+	visibility: visible;
+}
+.game__block:nth-child(2):hover + .game__block:nth-child(3){
+	visibility: visible;
+}
+.game__block:nth-child(3):hover + .game__block:nth-child(4){
+	visibility: visible;
+}
+.game__block:nth-child(4):hover + .game__block:nth-child(5){
+	visibility: visible;
+}
+.game__block:nth-child(5):hover + .game__block:nth-child(6){
+	visibility: visible;
+}
+.game__block:nth-child(6):hover + .game__block:nth-child(7){
+	visibility: visible;
+}
+.game__block:nth-child(7):hover + .game__block:nth-child(8){
+	visibility: visible;
+}
+.game__block:nth-child(8):hover + .game__finish{
+	visibility: visible;
+}
+
+.game__block {
+	visibility: hidden;
+}
+.game__block:hover {
+	visibility: visible;
+}
+.game__block:nth-child(2) {
+	width: 40px;
+	height: 200px;
+	background-color: #52a3ff;
+	margin-left: 50px;
+	margin-top: -5px;
+}
+.game__block:nth-child(3) {
+	width: 600px;
+	height: 40px;
+	background-color: #52a3ff;
+	margin-left: 50px;
+	margin-top: -25px;
+}
+.game__block:nth-child(4) {
+	width: 40px;
+	height: 150px;
+	background-color: #52a3ff;
+	margin-left: 610px;
+	margin-top: -25px;
+}
+.game__block:nth-child(5) {
+	width: 400px;
+	height: 40px;
+	background-color: #52a3ff;
+	margin-left: 250px;
+	margin-top: -25px;
+}
+.game__block:nth-child(6) {
+	width: 25px;
+	height: 120px;
+	background-color: #52a3ff;
+	margin-left: 250px;
+	margin-top: -25px;
+}
+.game__block:nth-child(7) {
+	width: 250px;
+	height: 20px;
+	background-color: #52a3ff;
+	margin-left: 250px;
+	margin-top: -20px;
+}
+.game__block:nth-child(8) {
+	width: 20px;
+	height: 50px;
+	background-color: #52a3ff;
+	margin-left: 480px;
+	margin-top: -20px;
+}
+.game__finish {
+	background-color: #ff1616;
+	width: 100px;
+	height: 50px;
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 15px;
+	margin-left: 440px;
+	margin-bottom: 20px;
+	margin-top: -15px;
+	visibility: hidden;
+}
+
